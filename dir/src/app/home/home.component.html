@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="bgimg-1">
+      <div class="caption">
+        <span class="border">Welcome to Opportunity Management </span>
+        <br><br><br>
+        <span class="border" *ngIf="loginService.isUserAdmin()"><a href="create">create job</a></span>
+        <span class="border"><a href ="list">list of Jobs</a></span>
+      </div>
+    </div>
+  </body>
+</html>

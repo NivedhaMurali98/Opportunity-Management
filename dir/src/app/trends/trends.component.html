@@ -1,0 +1,64 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
+<body>
+  <div class="page-wrapper bg-blue p-t-100 p-b-50" >
+      <div class="wrapper wrapper--w900">
+          <div class="card card-6">
+              <div class="card-heading">
+                  <h2 class="title">Insights</h2>
+              </div>
+              <div class="card-body">
+                  <form  #addjob>
+                      <div class="container center">
+                        <div class="chart1 center">
+                          <canvas mdbChart
+                            [chartType]="chartType1"
+                            [datasets]="chartDatasets"
+                            [labels]="thm"
+                            [colors]="chartColors"
+                            [options]="chartOptions"
+                            [legend]="true"
+                            (chartHover)="chartHovered($event)"
+                            (chartClick)="chartClicked($event)">
+                          </canvas>
+                        </div>
+                      </div>
+                      <br><br><br><br>
+                      <div class="container center">
+                        <div class="chart1 center">
+                            <canvas mdbChart
+                              [chartType]="chartType1"
+                              [datasets]="chartDatasets2"
+                              [labels]="tbar"
+                              [colors]="chartColors"
+                              [options]="chartOptions"
+                              [legend]="true"
+                              (chartHover)="chartHovered($event)"
+                              (chartClick)="chartClicked($event)">
+                            </canvas>
+                         </div>
+                      </div>
+                      <br><br><br><br>
+                      <div class="container center " style="text-align: center;">
+                        <div class="chart2 center ">
+                          <canvas mdbChart
+                          [chartType]="chartType"
+                          [datasets]="chartDatasets1"
+                          [labels]="t"
+                          [colors]="chartColors"
+                          [options]="chartOptions"
+                          [legend]="true"
+                          (chartHover)="chartHovered($event)"
+                          (chartClick)="chartClicked($event)">
+                        </canvas>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>

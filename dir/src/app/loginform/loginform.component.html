@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption" >
+    
+    <button *ngIf="!loginService.isUserLoggedIn()" (click)="googlelogin()"><span class="border">CLICK TO SIGN IN </span></button>
+    <button *ngIf="loginService.isUserLoggedIn()" (click)="logout()"><span class="border">SIGN OUT</span></button>
+
+    
+
+  </div>
+</div>
+
+
+</body>
+</html>
